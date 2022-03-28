@@ -110,6 +110,7 @@ cat listem.txt #cat komutu ile dosya icerigini ekrana yazdirabilirsiniz
 javac Main.java #Yukaridaki kodu derlemek icin terminale yazdigimiz komut
 java Main.class listem.txt #Derlenmis programi listem.txt argumani ile calistirma
 210 #Calistirdigimiz programin ciktisi
+```
 
 ### Sablon Kod
 
