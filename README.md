@@ -110,3 +110,44 @@ cat listem.txt #cat komutu ile dosya icerigini ekrana yazdirabilirsiniz
 javac Main.java #Yukaridaki kodu derlemek icin terminale yazdigimiz komut
 java Main.class listem.txt #Derlenmis programi listem.txt argumani ile calistirma
 210 #Calistirdigimiz programin ciktisi
+
+### Sablon Kod
+
+Bu odev icin sablon bir Main.java dosyasi verilmektedir. Eger yanlislikla bu dosyayi silerseniz Main.java isimli bos bir dosya olusturduktan sonra asagidaki sablon kodu bu dosyanin icine kopyalarak odeviniz icin kodlamaya baslayabilirsiniz.
+
+```java
+import java.io.FileReader;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+       //kodlarinizi buraya yazabilirsiniz. Gerek duyarsaniz yeni metod tanimlari yapabilirsiniz. 
+       // Lutfen tum kodunuzu bu dosya (Main.java) icinde yaziniz.
+    }
+    
+    //Bu metodun kodlari ile oynamayiniz. Yazacaginiz kodda bu metodu kullanmaniz gerekecektir.
+    public static int[] ReadIntArrayFromFile(String path){
+        List<Integer> intList = new ArrayList<Integer>();
+        Scanner sc;
+        try {
+            sc = new Scanner(new FileReader(path)).useDelimiter("\\s+");
+        }
+        catch(Exception ex){
+            return null;
+        }
+
+        while (sc.hasNext()) {
+            String token = sc.next();
+            int num = Integer.parseInt(token);
+            intList.add(num);
+        }
+
+        int[] intArray = new int[intList.size()];
+        int ind = 0;
+        for (Integer v:intList){
+            intArray[ind++] = v.intValue();
+        }
+        return intArray;
+    }
+}
+```
