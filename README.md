@@ -152,3 +152,21 @@ public class Main {
     }
 }
 ```
+
+## Ornek Liste Dosyalari
+
+Yazdiginiz kodu daha kolay test edebilmeniz icin liste1.txt ve liste2.txt isimli iki adet icinde tam sayilar bulunan dosya olusturulmustur. Dosyalarin icerigi asagidaki gibidir:
+
+liste1.txt
+
+```
+3 4 7 8 11 1 1 12
+```
+
+liste2.txt
+
+```
+1 2  4 55   7   2 7
+```
+
+
